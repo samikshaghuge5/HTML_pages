@@ -1,0 +1,30 @@
+﻿/*.container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+*/
+.container {
+    margin: 5px auto;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.form-control {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+/* Style the buttons */
+.btn {
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
