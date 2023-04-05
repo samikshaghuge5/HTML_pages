@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Enter a number <input type="number" id="t1" /><br />
+    Enter Number <input type="number" id="t2" /><br />
+    result <input type="number" id="t3" /><br />
+    <input type="button" id="btn1" value="Addition" />
+    <input type="button" id="btn2" value="Subtraction" />
+    <input type="button" id="btn3" value="Multiplication" />
+    <input type="button" id="btn4" value="Division" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+            integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+            crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                var x = parseInt($("#t1").val());
+                var y = parseInt($("#t2").val());
+                var sum = x + y;
+                $("#t3").val(sum);
+                $("p1").text('Addition is' + sum);
+                $("p2").html('<b>Addition is' + sum + "</b>");
+            })
+        });
+
+        $(document).ready(function () {
+            $("#btn2").click(function () {
+                var x = parseInt($("#t1").val());
+                var y = parseInt($("#t2").val());
+                var sum = x - y;
+                $("#t3").val(sum);
+                $("p1").text('Subtraction is' + sum);
+                $("p2").html('<b>Subtraction is' + sum + "</b>");
+            })
+        });
+        $(document).ready(function () {
+            $("#btn3").click(function () {
+                var x = parseInt($("#t1").val());
+                var y = parseInt($("#t2").val());
+                var sum = x * y;
+                $("#t3").val(sum);
+                $("p1").text('Multiplication is' + sum);
+                $("p2").html('<b>Multiplication is' + sum + "</b>");
+            })
+        });
+        $(document).ready(function () {
+            $("#btn4").click(function () {
+                var x = parseInt($("#t1").val());
+                var y = parseInt($("#t2").val());
+                var sum = x / y;
+                $("#t3").val(sum);
+                $("p1").text('Division is' + sum);
+                $("p2").html('<b>Division is' + sum + "</b>");
+            })
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
